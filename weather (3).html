@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="./newStyle.css">
+
+
+    
+</head>
+<body>
+    
+
+    <div class="formParent">
+
+        <div class="form">
+        <input id="inputCity" type="text" name="name" autocomplete="off" placeholder="Enter City Name" required>
+        <label for="name" class="lable-name">
+            <span class="content-name">Enter City Name</span>
+        </label>
+        </div>
+
+        <div class="formButton">
+            <button id="search" onclick="chooseCity()">Search</button>
+            </div>
+    </div>
+
+    <div class="container">
+
+        <div class="header">
+
+            <p id="city">City</p>
+
+        </div>
+
+        <div class="main">
+
+            <div class="icon">
+               <img src="./img/clear-day.svg" width="200" height="200" alt="">
+            </div>
+
+            <div class="temperature">
+                
+                <ul>
+                    <li>
+                        <a id="temperature" href="">0 C</a>
+                    </li>
+
+                    <li>
+                        <a id="time" href="">00:00</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="details">
+
+                <ul>
+                    <li>
+                        <a id="typeWeather" href="">Suny</a>
+                    </li>
+
+                    <li>
+                        <a id="date" href="">2023/01/01</a>
+                    </li>
+
+                    <li>
+                        <a id="windSpeed" href="">00 Km/s</a>
+                    </li>
+
+                    <li>
+                        <a id="aqi" href="">AQI None</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <ul>
+                <li>  
+                    <img id="weatherForecastOne" src="./img/cloudy.svg" width="50" height="50">
+                    <a id="weatherOne" href="">cloudy</a>
+                    <a id="dateForecastOne">Monday</a>
+                </li>
+                <li>
+                    <img id="weatherForecastTwo" src="./img/dust-wind.svg" width="50" height="50">
+                    <a id="weatherTwo" href="">dust-wind</a>
+                    <a id="dateForecastTwo">Tuesday</a>
+                </li>
+                <li>
+                    <img id="weatherForecastThree" src="./img/fog-day.svg" width="50" height="50">
+                    <a id="weatherThree" href="">foggy-day</a>
+                    <a id="dateForecastThree">Wednesday</a>
+                </li>
+                <li>
+                    <img id="weatherForecastFour" src="./img/rain.svg" width="50" height="50">
+                    <a id="weatherFour" href="">rainy</a>
+                    <a id="dateForecastFour">Thursday</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+
+  
+
+
+</body>
+</html>
